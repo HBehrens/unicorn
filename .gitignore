@@ -11,9 +11,7 @@
 *.class
 *.jar
 *~
-
 /.cache
-
 qemu/config-all-devices.mak
 
 qemu/aarch64-softmmu/

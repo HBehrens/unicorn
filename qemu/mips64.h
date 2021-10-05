@@ -1,6 +1,10 @@
 /* Autogen header for Unicorn Engine - DONOT MODIFY */
 #ifndef UNICORN_AUTOGEN_MIPS64_H
 #define UNICORN_AUTOGEN_MIPS64_H
+#ifdef UNICORN_USE_TCI
+#define tci_tb_ptr tci_tb_ptr_mips64
+#define tcg_qemu_tb_exec tcg_qemu_tb_exec_mips64
+#endif
 #define arm_release arm_release_mips64
 #define aarch64_tb_set_jmp_target aarch64_tb_set_jmp_target_mips64
 #define ppc_tb_set_jmp_target ppc_tb_set_jmp_target_mips64

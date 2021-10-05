@@ -303,7 +303,7 @@ static inline void tb_add_jump(TranslationBlock *tb, int n,
 
 /* GETRA is the true target of the return instruction that we'll execute,
    defined here for simplicity of defining the follow-up macros.  */
-#if defined(CONFIG_TCG_INTERPRETER)
+#if defined(UNICORN_USE_TCI)
 extern uintptr_t tci_tb_ptr;
 # define GETRA() tci_tb_ptr
 #elif defined(_MSC_VER)
